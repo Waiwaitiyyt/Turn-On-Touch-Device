@@ -12,11 +12,10 @@ void setup() {
 }
 
 void loop() {
-  // 扫描：0° → 90° → 180° → 回 0°
-  myServo.write(0);
-  delay(1e4);
 
   myServo.write(90);
-  delay(1e4);
+  delay(5e3);
 
-}
+  myServo.write(120);
+  delay(5e3);
+} 
